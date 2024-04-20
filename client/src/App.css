@@ -1,0 +1,527 @@
+
+body{
+  background-image:linear-gradient(180deg, #36454F, black) ;
+}
+.navbar {
+  
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 30;
+  display: flex;
+  height: 40px;
+  padding: 10px; /* reduce padding for better appearance */
+  background-color: rgb(49, 64, 73); /* add background color if needed */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4); /* add shadow for better visibility */
+}
+
+.navbar .nav-logo{
+  margin-top: 6px;
+  margin-left: 1%;
+  align-items: center;
+  display: flex;
+}
+
+.navbar-items{
+  
+  justify-content: end;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 3%;
+  display: flex;
+  flex:1;
+}
+
+#navigator-login{
+  align-items:center;
+  margin-top: -3px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #000;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 15px;
+  border-radius: 5px;
+  width: 5%;
+  height: 120%;
+}
+
+#navigator-login:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.1s;
+}
+
+#navigator{
+  
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 5px;
+  display: flex;
+  font-size: 18px;
+  color: rgb(221, 221, 221);
+  text-decoration: none;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+#navigator:hover{
+  text-decoration: underline;
+}
+
+.outer-welcome{
+  color: rgb(218, 209, 209);
+  margin-top: 9%;
+  height: 380px;
+  margin-left: 20%;
+  justify-content: center;
+  width: 80%;
+  
+}
+
+.welcome-container {
+  height: 50%;
+  width: 40%;
+  padding: 10px;
+  justify-items: start;
+  flex-direction: column;
+  border-radius: 5px;
+  justify-content: center;
+  display: flex;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.welcome-container button{
+  width: 30%;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.welcome-container button:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.1s;
+}
+
+.welcome-cards{
+  
+  display: flex;
+  flex-direction: row;
+  gap:60px;
+  justify-content: center;
+  height: 400px;
+
+}
+
+.smooth-interface{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius:15px;
+  color: rgba(255, 255, 255);
+  padding: 10px;
+  height: 300px;
+  width: 220px;
+  background-color: black;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform ease-in-out 0.5s;
+}
+
+.smooth-interface #content{
+  font-size: 15px;
+  color: rgba(255, 255, 255,0.8);
+}
+
+.smooth-interface:hover{
+  box-shadow: 10px black;
+  transform: scale(1.2);
+}
+
+.scalability{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius:15px;
+  color: rgba(255, 255, 255);
+  padding: 10px;
+  height: 300px;
+  width: 220px;
+  background-color: black;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform ease-in-out 0.5s;
+}
+
+.scalability #content{
+  font-size: 15px;
+  color: rgba(255, 255, 255,0.8);
+}
+
+.scalability:hover{
+  box-shadow: 10px black;
+  transform: scale(1.2);
+}
+
+.user-friendly{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius:15px;
+  color: rgba(255, 255, 255);
+  padding: 10px;
+  height: 300px;
+  width: 220px;
+  background-color: black;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform ease-in-out 0.5s;
+}
+
+.user-friendly #content{
+  font-size: 15px;
+  color: rgba(255, 255, 255,0.8);
+}
+
+.user-friendly:hover{
+  box-shadow: 10px black;
+  transform: scale(1.2);
+}
+
+.secure{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius:15px;
+  color: rgba(255, 255, 255);
+  padding: 10px;
+  height: 300px;
+  width: 220px;
+  background-color: black;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform ease-in-out 0.5s;
+}
+
+.secure #content{
+  font-size: 15px;
+  color: rgba(255, 255, 255,0.8);
+}
+
+.secure:hover{
+  box-shadow: 10px black;
+  transform: scale(1.2);
+}
+
+.footer-area{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+  height: 100px;
+}
+
+.footer-content{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:rgb(218, 209, 209);
+  margin-top: 2%;
+}
+
+.about-container{
+  color: rgb(218, 209, 209);
+  margin-top:70px;
+  height: 550px;
+  padding: 30px;
+  font-size: 18px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.about-container h1{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.login-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.choose-role h1{
+  color: rgb(218, 209, 209);
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.choose-role button{
+  padding: 20px;
+  margin:20px;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: rgb(218, 209, 209);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+.choose-role button:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container{
+  height: 650px;
+}
+
+.center{
+  height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 29vw;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.center h1{
+  align-items: center;
+  text-align: center;
+  padding: 15px 0 20px 0;
+  border-bottom: 1px solid silver;
+  background-color: #000;
+  color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: -0.5px;
+  border-radius: 10px 10px 0 0;
+}
+
+.center form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+form .txt_field{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+
+}
+
+.txt_field input{
+  
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0px;
+  height: 2px;
+  background: black;
+  transition: .5s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: black;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:Valid ~ span::before{
+  width: 100%;
+}
+
+.pass{
+  margin: -5px 0 20px 5px;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+
+.pass:hover{
+  text-decoration: underline;
+}
+
+input[type="Submit"]{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+input[type="Submit"]:hover{
+  background: black;
+  color: #e9f4fb;
+  transition: .5s;
+}
+
+.outer-panel {
+  
+  background-color: black;
+  height: 100vh;
+  width: 275px;
+  margin-left: -8px;
+  
+}
+
+.inner-panel {
+  
+  font-size: large;
+  margin-left: 45px;
+  margin-top: 100px;
+  display: block;
+  flex-direction: row;
+  color:white;
+  padding-top:100px;
+  justify-content: center;
+  width: 25vh;
+}
+
+.inner-panel #panel-navigator {
+  display: flex;
+  text-decoration: none;
+  color: rgb(185, 177, 177);;
+  font-weight: bold;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-bottom: 10px;
+  padding: 30px;
+  border-bottom: 2px solid gray;
+}
+
+#panel-navigator:hover {
+  color: white;
+}
+
+.dashboardlog-container {
+  display: flex; /* Use flexbox for side-by-side layout */
+  
+}
+
+.dashboardlog-content {
+  margin-top: -200px;
+  flex: 1; /* Take remaining space */
+  
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.submitbutton{
+  border-color: #36454F;
+  background-color: #36454F;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+}
+.placeholder
+{
+  left: 0px;
+  border-radius: 5px;
+  border-color: white;
+  height: 27px;
+}
+.dashboardlog-welcome-outer {
+  margin-right: auto; /* Use flexbox for centering */
+  margin-left: auto;
+  margin-top: 35vh;
+  width:fit-content;
+  height: 100vh; /* Set height to fill the viewport */
+  
+}
+
+.dashboardlog-welcome-inner {
+
+  text-align: center;
+  font-size: 15px;
+  margin-top: 100px;
+  height: 100px;
+  color: rgb(185, 177, 177);
+  left: 0px; /* Center the text horizontally */
+  background-color: black;
+  height: fit-content;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.dashboardlog-welcome{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  margin-top: 50px;
+  height: 100px;
+  color: rgb(185, 177, 177);
+  left: 0px; /* Center the text horizontally */
+  background-color: black;
+  width: 70vh;
+  height: 100vh;
+  border-radius: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+.no{
+  text-align: center;
+}
+.dashboardlog-inner{
+
+font-size: 15px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-align: center;
+}
+hr{
+  color: rgb(185, 177, 177);
+}
+
+.data-container {
+  display: flex;
+  width: 100%;
+  border: 2px solid grey;
+}
+
+.cmmit{
+  text-align: left;
+  background-color: black;
+  color: white;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.input-box{
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  display: flex;
+  text-align: right;
+  align-items: flex-end;
+}
+
+.commit-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  border: 2px solid white;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
